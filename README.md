@@ -1,1 +1,2 @@
-# GIAIC Teaching Chance 1 | Inquirer with Typescript
+# GIAIC Teaching Content
+> ## Inquirer with Typescript
