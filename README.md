@@ -1,2 +1,2 @@
 # GIAIC Teaching Content
-> ## Inquirer with Typescript
+> ## Inquirer with Typescript 
