@@ -43,7 +43,7 @@ console.log(`'\nThank you for your order!'`);
 orderCoffee();
 
 
-Example #2
+// Example #2
 
 // ErrorHandlingExample.ts
 import inquirer from 'inquirer';
