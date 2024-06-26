@@ -43,7 +43,39 @@ console.log(`'\nThank you for your order!'`);
 orderCoffee();
 
 
+Example #2
 
+// ErrorHandlingExample.ts
+import inquirer from 'inquirer';
+
+// Define the shape of the expected answers
+interface Answers {
+age: number;
+}
+
+// Function to ask for the user's age
+async function askAge() {
+const questions: inquirer.QuestionCollection = [
+{
+type: 'input',
+name: 'age',
+message: 'How old are you?',
+validate: function(value: string) {
+// Check if the value is a valid number
+const isValid = !isNaN(Number(value)) && Number(value) > 0;
+return isValid || 'Please enter a valid age';
+},
+filter: Number,
+},
+];
+
+// Prompt the user and log the answer
+const answers = await inquirer.prompt(questions);
+console.log(You are ${answers.age} years old.);
+}
+
+// Call the function
+askAge();
 
 
 
